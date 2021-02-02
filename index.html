@@ -1356,13 +1356,21 @@
         <!-- footer -->
         <div class="footer">
             <ul class="sns_a">
-                <li><a href="https://rosalynn-jay.github.io"><img src="resources/img_inc/btn_facebook.png"
-                                                                  alt="페이스북"></a></li>
-                <li><a href="https://rosalynn-jay.github.io"><img src="resources/img_inc/btn_twitter.png" alt="트위터"></a>
+                <li>
+                    <a href="https://rosalynn-jay.github.io">
+                        <img src="resources/img_inc/btn_facebook.png" alt="페이스북">
+                    </a>
                 </li>
-                <li id="kakao-link-btn"><a href="javascript:;"><img src="resources/img_inc/btn_kakao.png"
-                                                                    alt="카카오톡"></a></li>
-                <li><a href="javascript:shareStory();"><img src="resources/img_inc/btn_story.png" alt="카카오스토리"></a></li>
+                <li>
+                    <a href="https://rosalynn-jay.github.io">
+                        <img src="resources/img_inc/btn_twitter.png" alt="트위터">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:shareStory();">
+                        <img src="resources/img_inc/btn_story.png" alt="카카오스토리">
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- / footer -->
@@ -1436,37 +1444,13 @@
             $("#movie").hide();
         }
 
-        // $(".map_wrap").html(strMapMedia);
-
 
         // SNS
-        // 카카오
-
         var _desc = "2021-03-20 토요일 오후 3시 30분";
 
         var _image = $('meta[property="og:image"]').attr('content');
         var _imgWidth = $('meta[property="og:image:width"]').attr('content');
         var _imgHeight = $('meta[property="og:image:height"]').attr('content');
-
-
-        Kakao.init('a49482f8712e502e947185a673e879ba');
-
-        Kakao.Link.createDefaultButton({
-            container: '#kakao-link-btn', // 버튼 id
-            objectType: 'location', // 카카오톡 링크 타입
-            content: {
-                title: "장재우 이장미 결혼합니다.", // 타이틀
-                description: "2021년 3월 20일(토) 오후 3시30분\n더베일리하우스 삼성", // 상세정보
-                imageUrl: _image, // 이미지
-                link: {
-                    mobileWebUrl: 'https://rosalynn-jay.github.io/wedding-card', // 모바일 주소 걍 location.href
-                    webUrl: 'https://rosalynn-jay.github.io/wedding-card'  // 웹 주소 걍 location.href
-                },
-                imageWidth: parseInt(_imgWidth), // 이미지가로
-                imageHeight: parseInt(_imgHeight)// 이미지 세로
-            },
-            address: "서울 강남구 영동대로 506" // container 가 location 일때 위치보기 아이콘 이 갈 주소 (ex. 경기 고양시 덕양구 용두로47번안길 47)
-        });
 
 
         // 나머지
