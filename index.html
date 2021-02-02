@@ -70,7 +70,7 @@
        value="새로운 마음과 새 의미를 간직하며 &lt;br /&gt;저희 두 사람이 새 출발의 첫걸음을 내딛습니다.&lt;br /&gt;좋은 꿈, 바른 뜻으로 올바르게 살 수 있도록&lt;br /&gt;축복과 격려 주시면 더없는 기쁨으로&lt;br /&gt;간직하겠습니다. ">
 <input id="galleryYN" name="galleryYN" type="hidden" value="Y">
 <input id="galType" name="galType" type="hidden" value="S">
-<input id="videoYN" name="videoYN" type="hidden" value="N">
+<input id="videoYN" name="videoYN" type="hidden" value="Y">
 <input id="vidType" name="vidType" type="hidden" value="VYTB">
 <input id="vidURL" name="vidURL" type="hidden" value="https://www.youtube.com/watch?v=SI__ysJKOmc">
 
@@ -141,6 +141,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
+
+
 
         <!-- 초대합니다 -->
         <div id="greeting" class="pages input_greeting_focus">
@@ -239,12 +241,34 @@
         </div>
         <!-- / 초대합니다 -->
         <!-- 갤러리 -->
+
         <div id="gallery" class="pages">
             <h2><img src="resources/title_img_2.png"></h2>
             <!-- 갤러리 타입 1 -->
             <div id="gallery_type1" class="skin_gallery_type">
                 <!-- a href="팝업이미지" background="섬네일 이미지" data-size=이미지 원본 사이즈 -->
                 <div class="skin_gallery" data-pswp-uid="1">
+                    <figure>
+                        <a href="photos/1.jpeg"
+                           style="background:url(photos/thumbnail/1.jpeg) no-repeat center center"
+                           itemprop="contentUrl" data-size="750x525" class="setimgsize">
+                            <img src="resources/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="photos/1.jpeg"
+                           style="background:url(photos/thumbnail/1.jpeg) no-repeat center center"
+                           itemprop="contentUrl" data-size="750x525" class="setimgsize">
+                            <img src="resources/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="photos/1.jpeg"
+                           style="background:url(photos/thumbnail/1.jpeg) no-repeat center center"
+                           itemprop="contentUrl" data-size="750x525" class="setimgsize">
+                            <img src="resources/img_frame.png" class="img_frame" itemprop="thumbnail" alt="">
+                        </a>
+                    </figure>
                     <figure>
                         <a href="photos/1.jpeg"
                            style="background:url(photos/thumbnail/1.jpeg) no-repeat center center"
@@ -304,7 +328,7 @@
                         Don't modify these 3 pswp__item elements, data is added later on. -->
                         <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
                             <!--                            <div class="pswp__item" style="display: block; transform: translate3d(-1667px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(464px, 124px, 0px) scale(0.813953);"><img class="pswp__img" src="photos/34.jpg" style="opacity: 1; width: 688px; height: 860px;"></div></div>-->
-                            <!--                            <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(17px, 67.5781px, 0px) scale(0.367909);"><img class="pswp__img pswp__img&#45;&#45;placeholder" src="resources/img_frame.png" style="width: 1292px; height: 860px; display: none;"><img class="pswp__img" src="photos/20210721_141217.jpg" style="display: block; width: 1292px; height: 860px;"></div></div>-->
+                            <!--                            <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(17px, 67.5781px, 0px) scale(0.367909);"><img class="pswp__img pswp__img--placeholder" src="resources/img_frame.png" style="width: 1292px; height: 860px; display: none;"><img class="pswp__img" src="photos/20210721_141217.jpg" style="display: block; width: 1292px; height: 860px;"></div></div>-->
                             <!--                            <div class="pswp__item" style="display: block; transform: translate3d(1667px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(482px, 124px, 0px) scale(0.813953);"><img class="pswp__img" src="photos/400.jpg" style="opacity: 1; width: 645px; height: 860px;"></div></div>-->
                             <div class="pswp__item"></div>
                             <div class="pswp__item"></div>
@@ -354,10 +378,7 @@
         <!-- 영상 -->
         <div id="movie" class="pages input_movie_focus" style="display:none;">
             <h2><img src="resources/title_img_3.png"></h2>
-
             <div class="input_movie">"등록된 영상이 없습니다"</div>
-
-
         </div>
         <!-- / 영상 -->
         <!-- 오시는길 -->
